@@ -28,6 +28,11 @@ export default function Register() {
       const password = event.target.password.value;
       const confirm = event.target.confirm.value;
       
+      if (password != confirm) {
+        setError('Passswords must match!');
+        return;
+      }
+      
       try {
           let response = await fetchAPI('/auth/register', {
             method: 'POST',
