@@ -17,6 +17,7 @@ todos off the top of my head
 - Games?
 - Export functionality
 - Make it look better
+- Make it look better ON MobILE
 
 ## Setup
 
