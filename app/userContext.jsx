@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect, useCallback, useMemo } from 'react';
+import { createContext, useState, useEffect } from 'react';
 import { fetchAPI } from './util';
 
 export const UserContext = createContext(null);

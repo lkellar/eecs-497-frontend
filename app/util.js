@@ -1,5 +1,4 @@
 import { API_BASE_URL } from './config'
-import { useCallback } from 'react';
 
 // applies base URL and credentialing options
 // url should be in the format "/route"
