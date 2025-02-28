@@ -10,4 +10,8 @@ async function fetchAPI(url, options) {
     })
 }
 
-export { fetchAPI }
+function mod(n, m) {
+  return ((n % m) + m) % m;
+}
+
+export { fetchAPI, mod }

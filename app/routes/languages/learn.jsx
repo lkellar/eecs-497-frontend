@@ -1,4 +1,4 @@
-import { fetchAPI } from '../../util';
+import { fetchAPI, mod } from '../../util';
 import { useNavigate } from 'react-router';
 import { useEffect, useState, useTransition } from 'react';
 import Header from '../../components/header';
@@ -41,7 +41,7 @@ export default function LearnLanguage({params}) {
             return;
         }
         const wordCount = data.words.length;
-        setCurrentIndex(prev => (prev + delta) % data.words.length);
+        setCurrentIndex(prev => mod(prev + delta, data.words.length));
     }
     
     return (
