@@ -1,0 +1,18 @@
+@import url("app.css");
+
+div.flashcard {
+    display: flex;
+    flex-flow: column;
+    background-color: #DADADA;
+    border-radius: 55px;
+    padding: 25px;
+    box-shadow: #ABABAB 10 10px;
+    border: 1px black solid;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    text-align: center;
+    & > * {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

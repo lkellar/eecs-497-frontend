@@ -1,0 +1,19 @@
+@import url('app.css');
+
+.header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 0 25px 25px;
+    * button {
+        box-shadow: #ABABAB 5px 5px;
+    }
+}
+
+.header > div {
+    display: flex;
+    flex-flow: row nowrap;
+    * button {
+        margin: 0 10px;
+    }
+}

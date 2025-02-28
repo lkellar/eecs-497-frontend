@@ -1,98 +1,33 @@
-# Welcome to React Router!
+# EECS 497 Frontend
 
-A modern, production-ready template for building full-stack React applications using React Router.
+we gotta think of a name for this project.
 
-## Features
+Anyways, so far this is a basic working demo of literally just login, create lang, import words, and like the most basic flash cards.
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+I tried to line up with the Figma kinda, but didn't do it perfectly, but I figure after Spring break we can figure out what's next. Right now it's more at the "we can video demo a prototype" kinda stage.
 
-## Getting Started
+**Check out the url in the sidebar to see a working demo**
 
-### Installation
+## TODO
 
-Install the dependencies:
+todos off the top of my head
+- Logout doesn't always work?
+- Enhance flashcards
+- Build in lesson functionality
+- Games?
+- Export functionality
+- Make it look better
 
-```bash
-npm install
-```
+## Setup
 
-### Development
+This is a react-router based react app. Setup is pretty simple. Clone the repo and install dependencies with `npm install`
 
-Start the development server with HMR:
+Then, create a file called `.env.local` and format it like so (but put in the url of the locally running API) (note the https, login doesn't work locally if not https)
 
 ```bash
-npm run dev
+VITE_API_BASE_URL='https://127.0.0.1:5000'
 ```
 
-Your application will be available at `http://localhost:5173`.
+You can then run `npm run dev` and it should start running at some port. I had better luck running it in chrome (the dev environment doesn't like Safari :( ).
 
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-This template includes three Dockerfiles optimized for different package managers:
-
-- `Dockerfile` - for npm
-- `Dockerfile.pnpm` - for pnpm
-- `Dockerfile.bun` - for bun
-
-To build and run using Docker:
-
-```bash
-# For npm
-docker build -t my-app .
-
-# For pnpm
-docker build -f Dockerfile.pnpm -t my-app .
-
-# For bun
-docker build -f Dockerfile.bun -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+Before anything will really work, you'll need to open up the api in another tab (any route will work) and bypass the scary invalid certificate error. This will let the react app use the invalid certificate locally (and allow it to communicate with the API).

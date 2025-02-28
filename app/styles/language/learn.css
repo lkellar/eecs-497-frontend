@@ -1,0 +1,18 @@
+@import url('../app.css');
+
+main {
+    padding: 0 25px 25px;
+}
+
+main > div.content {
+    margin: 0 auto;
+}
+
+.flash_controls {
+    display: flex;
+    flex-flow: row nowrap;
+    & > button {
+        margin: 0 10px;
+    }
+    justify-content: center;
+}

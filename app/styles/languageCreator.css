@@ -1,0 +1,12 @@
+@import url('app.css');
+
+form.lang_creator {
+    display: flex;
+    flex-flow: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form.lang_creator > input[type="lang_name"] {
+    margin-bottom: 0;
+}

@@ -1,0 +1,37 @@
+@import url('app.css');
+
+.languages {
+    display: flex;
+    flex-flow: column;
+}
+
+.language {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 0 50px;
+    border-bottom: 1px black solid;
+    &:first-child {
+        border-top: 1px black solid;
+    }
+}
+
+.language > h3 {
+    margin: auto 0;
+}
+
+.language button {
+    margin-left: 20px;
+}
+
+.title {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+}
+
+.title > button {
+    margin-left: auto;
+    margin-right: 50px;
+}
