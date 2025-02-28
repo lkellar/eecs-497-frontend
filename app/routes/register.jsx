@@ -16,6 +16,7 @@ export default function Register() {
   const {setEmail} = useContext(UserContext);
   const [error, setError] = useState('');
   const [registrationPending, startRegistration] = useTransition();
+  let navigate = useNavigate();
   
   const handleSubmit = (event) => {
     startRegistration(async () => {
