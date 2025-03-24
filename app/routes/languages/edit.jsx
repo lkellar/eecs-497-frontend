@@ -1,5 +1,5 @@
 import { fetchAPI } from '../../util';
-import { useNavigate } from 'react-router';
+import { useNavigate, Link } from 'react-router';
 import { useEffect, useState, useTransition } from 'react';
 import Header from '../../components/header';
 import '../../styles/language/edit.css';
@@ -74,7 +74,11 @@ export default function EditLanguage({params}) {
         <>
         <Header />
         <main>
+            <div className='title'>
+            <div></div>
             <h1>Edit {data ? data.language.name : 'Language'}</h1>
+            <Link to={`/language/${params.lang_id}/lesson/create`}><button className="secondary">Create Lesson</button></Link>
+            </div>
             <form method="post" onSubmit={handleSubmit}>
                 <h3>Import new words</h3>
                 <p>Type words in the following comma seperated format (definitions are optional):</p>

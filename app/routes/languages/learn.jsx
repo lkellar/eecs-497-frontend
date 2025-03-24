@@ -1,5 +1,5 @@
 import { fetchAPI, mod } from '../../util';
-import { useNavigate } from 'react-router';
+import { useNavigate, Link } from 'react-router';
 import { useEffect, useState, useTransition } from 'react';
 import Header from '../../components/header';
 import Flashcard from '../../components/flashcard';
@@ -74,6 +74,22 @@ export default function LearnLanguage({params}) {
                 )}
             </div>
         </main>
+        {data != null && (
+          <footer className="box">
+          <h3>Lessons</h3>
+          {data.lessons.length > 0 && (
+            <div className="lesson_carousel">{data.lessons.map(lesson => (
+              <div className="lesson_card" key={lesson.id}>
+              <h4>{lesson.title}</h4>
+              <Link to={`/language/${params.lang_id}/lesson/${lesson.id}`}><button className="primary">Read</button></Link>
+              </div>
+            ))}</div>
+          )}
+          {data.lessons.length == 0 && (
+            <p>No lessons created yet!</p>
+          )}
+          </footer>
+        )}
         </>
     )
 }

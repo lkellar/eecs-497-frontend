@@ -39,7 +39,7 @@ export default function LanguageCreator() {
   return (
     <form className="lang_creator" method="post" onSubmit={handleSubmit}>
         <label htmlFor="lang_name">Language Name</label>
-        <input type="lang_name" name="lang_name"  />
+        <input type="text" name="lang_name"  />
         <button className="primary" type="submit" disabled={creationPending}>Create</button>
         
         {error && (

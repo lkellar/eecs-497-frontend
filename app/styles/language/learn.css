@@ -16,3 +16,28 @@ main > div.content {
     }
     justify-content: center;
 }
+
+footer > h3 {
+    text-align: center;
+}
+
+.lesson_carousel {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.lesson_card {
+    display: flex;
+    flex-flow: column;
+    border-radius: 55px;
+    padding: 25px;
+    border: 1px black solid;
+    margin: 0 25px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+footer > p {
+    text-align: center;
+}

@@ -20,7 +20,14 @@ button.secondary {
   color: white;
 }
 
-main {
+.title {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+}
+
+main, .box {
     background-color: #DADADA;
     border-radius: 55px;
     display: flex;
@@ -62,4 +69,14 @@ form {
     margin: 25px auto;
     width: 60%;
     max-width: 600px;
+}
+
+.title > button:last-child, .title > a:last-child {
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.title > button:first-child, .title > a:first-child {
+    margin-left: 50px;
+    margin-right: auto;
 }

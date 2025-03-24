@@ -23,15 +23,3 @@
 .language button {
     margin-left: 20px;
 }
-
-.title {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-}
-
-.title > button {
-    margin-left: auto;
-    margin-right: 50px;
-}

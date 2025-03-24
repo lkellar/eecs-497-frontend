@@ -7,5 +7,8 @@ export default [
     ...prefix('language', [
         route(":lang_id", 'routes/languages/learn.jsx'), 
        route(":lang_id/edit", 'routes/languages/edit.jsx'), 
+       route(":lang_id/lesson/create", "routes/languages/create_lesson.jsx"),
+       route(":lang_id/lesson/:lesson_id", "routes/languages/lesson.jsx"),
+       route(":lang_id/lesson/:lesson_id/edit", "routes/languages/edit_lesson.jsx")
     ]),
 ];
