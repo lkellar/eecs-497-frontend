@@ -3,7 +3,7 @@
 div.flashcard {
     display: flex;
     flex-flow: column;
-    background-color: #DADADA;
+    background-color: #EEDDD3;
     border-radius: 55px;
     padding: 25px;
     box-shadow: #ABABAB 10 10px;

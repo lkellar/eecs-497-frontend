@@ -55,7 +55,7 @@ export default function Home() {
       <div className="title">
         <div></div>
         <h1>Languages</h1>
-        <button onClick={handleClickCreate}>Create</button>
+        <button className="primary" onClick={handleClickCreate}>Create</button>
       </div>
       {showCreator && (
         <LanguageCreator />
