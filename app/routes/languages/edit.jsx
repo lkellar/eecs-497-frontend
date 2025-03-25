@@ -81,8 +81,8 @@ export default function EditLanguage({params}) {
             </div>
             <form method="post" onSubmit={handleSubmit}>
                 <h3>Import new words</h3>
-                <p>Type words in the following comma seperated format (definitions are optional):</p>
-                <pre>english,translation,defintion</pre>
+                <p>Type words in the following comma separated format (definitions are optional):</p>
+                <pre>english,translation,definition</pre>
                 <textarea rows="10" name="words" autoComplete="false" autoCorrect="false"></textarea>
                 <button className="primary" type="submit" disabled={submitting}>Import</button>
             </form>
