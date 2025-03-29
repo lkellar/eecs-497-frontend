@@ -32,6 +32,26 @@ export default function EditLanguage({params}) {
         }
     }
     
+    const deleteWord = word_id => {
+      startSubmission(async () => {
+        setError('');
+        
+        try {
+          const r = await fetchAPI(`/lang/${params.lang_id}/word/${word_id}`, {
+            method: 'DELETE'
+          });
+          if (!r.ok) {
+              const data = await r.json();
+              setError(data.error);
+          }
+        } catch (e) {
+          setError(e.message);
+        }
+        
+        await fetchExisting();
+      });
+    }
+    
     useEffect(() => {
         fetchExisting();
     }, []);
@@ -97,7 +117,7 @@ export default function EditLanguage({params}) {
                 <h3>Existing Words</h3>
                 <ul>
                 {data.words.map(w => (
-                    <li key={w.english}>{w.translation} - {w.english}{w.definition ? ` - ${w.definition}` : ''}</li>
+                    <li key={w.english}>{w.translation} - {w.english}{w.definition ? ` - ${w.definition}` : ''}<a className="delete-link" onClick={e => {e.preventDefault(); deleteWord(w.id)}}>Delete</a></li>
                 ))}
                 </ul>
                 </>

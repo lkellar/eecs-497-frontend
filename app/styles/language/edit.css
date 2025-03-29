@@ -3,3 +3,17 @@
 main {
     padding: 0 25px 25px;
 }
+
+a.delete-link {
+    margin-left: 5px;
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+    &:before {
+      content: '- ';
+      color: black;
+      text-decoration: none;
+      display:inline-block;
+      margin-right: 5px;
+    }
+}
