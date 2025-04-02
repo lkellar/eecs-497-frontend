@@ -40,6 +40,7 @@ main, .box {
     padding-bottom: 50px;
     padding-top: 25px;
     box-shadow: #ABABAB 15px 15px;
+    text-align: center;
 }
 
 main h1 {

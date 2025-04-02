@@ -74,6 +74,16 @@ export default function LearnLanguage({params}) {
                 )}
             </div>
         </main>
+        {
+            data != null && data.words != null && data.words.length >= 3 && (
+                <div>
+                <footer className="box">
+                <h3>Game</h3>
+                <Link to={`/language/${params.lang_id}/game`}><button className="primary">Play</button></Link>
+                </footer>
+                </div>
+            )
+        }
         {data != null && (
           <footer className="box">
           <h3>Lessons</h3>

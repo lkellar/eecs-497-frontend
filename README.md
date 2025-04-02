@@ -1,8 +1,8 @@
-# EECS 497 Frontend
+# SoleSpeaks (EECS497 Capstone Project)
+<img src="https://github.com/user-attachments/assets/f2ecbb48-8956-42df-8ef9-a9ddc193ced7" width="200" alt="Untitled_Artwork 17">
 
-we gotta think of a name for this project.
 
-Anyways, so far this is a basic working demo of literally just login, create lang, import words, and like the most basic flash cards.
+So far this is a basic working demo of literally just login, create lang, import words, and like the most basic flash cards.
 
 I tried to line up with the Figma kinda, but didn't do it perfectly, but I figure after Spring break we can figure out what's next. Right now it's more at the "we can video demo a prototype" kinda stage.
 
