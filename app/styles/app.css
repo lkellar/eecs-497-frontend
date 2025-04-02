@@ -41,6 +41,9 @@ main, .box {
     padding-top: 25px;
     box-shadow: #ABABAB 15px 15px;
     text-align: center;
+    & ul {
+      text-align: left;
+    }
 }
 
 main h1 {
