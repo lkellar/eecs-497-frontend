@@ -9,6 +9,7 @@ export default [
        route(":lang_id/edit", 'routes/languages/edit.jsx'), 
        route(":lang_id/lesson/create", "routes/languages/create_lesson.jsx"),
        route(":lang_id/lesson/:lesson_id", "routes/languages/lesson.jsx"),
-       route(":lang_id/lesson/:lesson_id/edit", "routes/languages/edit_lesson.jsx")
+       route(":lang_id/lesson/:lesson_id/edit", "routes/languages/edit_lesson.jsx"),
+       route(":lang_id/game", "routes/languages/game.jsx")
     ]),
 ];
