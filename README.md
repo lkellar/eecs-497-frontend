@@ -1,5 +1,5 @@
 # SoleSpeaks (EECS497 Capstone Project)
-![Untitled_Artwork 17](https://github.com/user-attachments/assets/f2ecbb48-8956-42df-8ef9-a9ddc193ced7)
+<img src="https://github.com/user-attachments/assets/f2ecbb48-8956-42df-8ef9-a9ddc193ced7" width="300" alt="Untitled_Artwork 17">
 
 
 So far this is a basic working demo of literally just login, create lang, import words, and like the most basic flash cards.
