@@ -4,8 +4,9 @@ import { useContext, useTransition } from 'react';
 import { Link } from 'react-router';
 import { fetchAPI } from '../util';
 import '../styles/header.css';
+import Logo from '../../public/logo.png';
 
-export default function Header() {
+export default function Header({onSearch}) {
   const { email, setEmail } = useContext(UserContext);
   const [logoutPending, startLogout] = useTransition();
   
@@ -20,7 +21,16 @@ export default function Header() {
 
   return (
       <div className="header">
-      <Link to="/">{PRODUCT_NAME}</Link>
+      <Link to="/" className="product-link">
+        <img src={Logo} alt="Logo" className="logo" />
+        {PRODUCT_NAME}
+      </Link>
+      <input
+        type="text"
+        placeholder="  Search a language..."
+        className="search-bar"
+        onChange={(e) => onSearch(e.target.value)}
+      />
       {email && (
         <div>
         <button className="secondary" onClick={handleLogout}>Log Out</button>
