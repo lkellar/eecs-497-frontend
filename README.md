@@ -8,6 +8,10 @@ I tried to line up with the Figma kinda, but didn't do it perfectly, but I figur
 
 **Check out the url in the sidebar to see a working demo**
 
+## Current UI
+<img width="1389" alt="Screenshot 2025-04-09 at 9 23 52 PM" src="https://github.com/user-attachments/assets/f3190ffb-2a83-4f37-b788-379f1bbf62e0" />
+
+
 ## TODO
 
 todos off the top of my head
