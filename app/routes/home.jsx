@@ -7,6 +7,8 @@ import LanguageCreator from '../components/languageCreator';
 import { UserContext } from '../userContext';
 import '../styles/home.css';
 import defaultImage from "../../public/logo.png";
+import Billboard from '../components/billboard';
+import Puppets from '../images/puppets.png';
 
 export function meta() {
   return [
@@ -55,6 +57,10 @@ export default function Home() {
   return (
       <>
       <Header onSearch={setSearchQuery} />
+      <Billboard title = {"About SoleSpeak 🧑‍🔧 👩‍🔧"} 
+        description={"Our app aims to create a web application that enables users to design their own language-learning lessons and share them with the community. By focusing on underrepresented and endangered languages, our application seeks to empower speakers of these languages to document and pass on their knowledge, thus contributing to their preservation."}
+        image={Puppets}
+      />
       <main>
       <div className="title">
         <div></div>
