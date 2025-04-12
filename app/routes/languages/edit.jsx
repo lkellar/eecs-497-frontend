@@ -96,7 +96,7 @@ export default function EditLanguage({params}) {
         <Header />
         <main>
             <div className='title'>
-            <Link to={`${API_BASE_URL}/lang/${params.lang_id}/export`}><button className="secondary">Export</button></Link>
+            <a href={`${API_BASE_URL}/lang/${params.lang_id}/export`}><button className="secondary">Export</button></a>
             <h1>Edit {data ? data.language.name : 'Language'}</h1>
             <Link to={`/language/${params.lang_id}/lesson/create`}><button className="secondary">Create Lesson</button></Link>
             </div>
