@@ -1,5 +1,6 @@
 import { fetchAPI } from '../../util';
 import { useNavigate, Link } from 'react-router';
+import { API_BASE_URL } from '../../config';
 import { useEffect, useState, useTransition } from 'react';
 import Header from '../../components/header';
 import '../../styles/language/edit.css';
@@ -95,7 +96,7 @@ export default function EditLanguage({params}) {
         <Header />
         <main>
             <div className='title'>
-            <div></div>
+            <Link to={`${API_BASE_URL}/lang/${params.lang_id}/export`}><button className="secondary">Export</button></Link>
             <h1>Edit {data ? data.language.name : 'Language'}</h1>
             <Link to={`/language/${params.lang_id}/lesson/create`}><button className="secondary">Create Lesson</button></Link>
             </div>
