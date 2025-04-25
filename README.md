@@ -1,27 +1,10 @@
 # SoleSpeaks (EECS497 Capstone Project)
 <img src="https://github.com/user-attachments/assets/f2ecbb48-8956-42df-8ef9-a9ddc193ced7" width="200" alt="Untitled_Artwork 17">
 
-
-So far this is a basic working demo of literally just login, create lang, import words, and like the most basic flash cards.
-
-I tried to line up with the Figma kinda, but didn't do it perfectly, but I figure after Spring break we can figure out what's next. Right now it's more at the "we can video demo a prototype" kinda stage.
-
 **Check out the url in the sidebar to see a working demo**
 
 ## Current UI
 <img width="1389" alt="Screenshot 2025-04-09 at 9 23 52 PM" src="https://github.com/user-attachments/assets/f3190ffb-2a83-4f37-b788-379f1bbf62e0" />
-
-
-## TODO
-
-todos off the top of my head
-- Logout doesn't always work?
-- Enhance flashcards
-- Build in lesson functionality
-- Games?
-- Export functionality
-- Make it look better
-- Make it look better ON MobILE
 
 ## Setup
 
